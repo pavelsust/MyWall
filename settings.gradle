@@ -1,2 +1,2 @@
-include ':app', ':wallpaper'
+include ':app', ':wallpaper', ':core'
 rootProject.name='MyWall'

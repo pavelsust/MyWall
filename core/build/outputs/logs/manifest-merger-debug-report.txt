@@ -1,0 +1,39 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:11-60
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+	android:versionCode
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+application
+ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml:3:5-19
+uses-sdk
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		ADDED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml
+		INJECTED from /Users/anroid/Kotlin Android Project/MyWall/core/src/main/AndroidManifest.xml

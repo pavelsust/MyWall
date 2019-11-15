@@ -1,14 +1,14 @@
 package com.pavel.mywall
 
+import android.app.WallpaperManager
 import android.os.Bundle
-import android.util.Log
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import kotlinx.android.synthetic.main.activity_main.*
+import com.squareup.picasso.Picasso
 import com.wallpaper.WallpaperApplyTask
 
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,8 +19,8 @@ class MainActivity : AppCompatActivity() {
 
 
         WallpaperApplyTask.prepare(this)
-            .wallpaperLink("https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg")
-            .to(WallpaperApplyTask.Apply.HOMESCREEN())
+            .wallpaperLink("https://wallpaperplay.com/walls/full/0/2/e/105979.jpg")
+            .to(WallpaperApplyTask.Apply.HOME_CROP_WALLPAPER())
             .start()
 
     }

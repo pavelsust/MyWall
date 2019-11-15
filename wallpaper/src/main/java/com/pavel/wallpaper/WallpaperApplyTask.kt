@@ -42,7 +42,7 @@ object WallpaperApplyTask : WallpaperPropertiesLoaderTask.CallbackWallpaper,
     }
 
     fun wallpaperLink(link: String): WallpaperApplyTask{
-        wallpaperItem?.imageLink = link
+        wallpaper(WallpaperItem(link))
         return this
     }
 

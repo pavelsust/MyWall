@@ -57,8 +57,5 @@ dependencies {
     implementation "androidx.concurrent:concurrent-futures:1.0.0-rc01"
     implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
 
-
-    implementation 'com.github.danimahardhika.android-helpers:core:0.1.0'
-
-    implementation 'com.github.danimahardhika.android-helpers:animation:0.1.0'
+    implementation project(':core')
 }
