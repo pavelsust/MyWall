@@ -83,8 +83,6 @@ object WallpaperApplyTask : WallpaperPropertiesLoaderTask.CallbackWallpaper,
                             Log.d("WALLPAPER_ITEM", "" + it)
                         }
                     }
-
-
                  */
             }
 
