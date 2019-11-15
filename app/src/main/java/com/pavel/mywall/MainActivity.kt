@@ -3,8 +3,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import kotlinx.android.synthetic.main.activity_main.*
 import com.wallpaper.WallpaperApplyTask
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 
