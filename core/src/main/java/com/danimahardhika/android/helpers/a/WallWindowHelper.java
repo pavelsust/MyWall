@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core;
+package com.danimahardhika.android.helpers.a;
 
 import android.app.Activity;
 import android.app.ActivityManager;
@@ -174,7 +174,7 @@ public class WallWindowHelper {
     }
 
     public static void setupApplicationWindowColor(@NonNull Context context, String appName, @DrawableRes int resId, @ColorInt int color) {
-        Drawable drawable = DrawableHelper.get(context, resId);
+        Drawable drawable = WallDrawableHelper.get(context, resId);
         Bitmap bitmap = WallBitmapHelper.toBitmap(drawable);
         setupApplicationWindowColor(context, appName, bitmap, color);
     }

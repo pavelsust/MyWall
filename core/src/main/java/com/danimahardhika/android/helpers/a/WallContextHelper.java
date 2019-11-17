@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core;
+package com.danimahardhika.android.helpers.a;
 
 import android.content.Context;
 import android.view.View;

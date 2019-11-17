@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core;
+package com.danimahardhika.android.helpers.a;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -33,7 +33,7 @@ import androidx.core.graphics.drawable.DrawableCompat;
  * limitations under the License.
  */
 
-public class DrawableHelper {
+public class WallDrawableHelper {
 
     public static int getResourceId(@NonNull Context context, String resName) {
         try {

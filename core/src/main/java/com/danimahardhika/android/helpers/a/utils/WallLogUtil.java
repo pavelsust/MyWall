@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core.utils;
+package com.danimahardhika.android.helpers.a.utils;
 
 
 import android.util.Log;

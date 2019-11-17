@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core;
+package com.danimahardhika.android.helpers.a;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -39,13 +39,13 @@ public class WallBitmapHelper {
 
     @Nullable
     public static Bitmap getTintedBitmap(@NonNull Context context, @DrawableRes int resId, @ColorInt int color) {
-        Drawable drawable = DrawableHelper.get(context, resId);
+        Drawable drawable = WallDrawableHelper.get(context, resId);
         return getTintedBitmap(drawable, color);
     }
 
     @Nullable
     public static Bitmap getTintedBitmap(@NonNull Drawable drawable, @ColorInt int color) {
-        Drawable tintedDrawable = DrawableHelper.getTintedDrawable(drawable, color);
+        Drawable tintedDrawable = WallDrawableHelper.getTintedDrawable(drawable, color);
         if (tintedDrawable != null) return toBitmap(drawable);
         return null;
     }
@@ -92,7 +92,7 @@ public class WallBitmapHelper {
 
     @Nullable
     public static Bitmap toBitmap(@NonNull Context context, @DrawableRes int resId) {
-        Drawable drawable = DrawableHelper.get(context, resId);
+        Drawable drawable = WallDrawableHelper.get(context, resId);
         return toBitmap(drawable);
     }
 }

@@ -6,9 +6,8 @@ import android.graphics.Point
 import android.graphics.RectF
 import android.os.Build
 import androidx.annotation.Nullable
-import com.danimahardhika.android.helpers.core.WallWindowHelper
+import com.danimahardhika.android.helpers.a.WallWindowHelper
 import com.nostra13.universalimageloader.core.assist.ImageSize
-import java.io.File
 
 object WallpaperHelper {
 

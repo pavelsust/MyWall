@@ -6,7 +6,7 @@ import android.content.Context
 import android.graphics.*
 import android.os.Build
 import android.util.Log
-import com.danimahardhika.android.helpers.core.WallWindowHelper
+import com.danimahardhika.android.helpers.a.WallWindowHelper
 import com.nostra13.universalimageloader.core.ImageLoader
 import com.nostra13.universalimageloader.core.assist.ImageSize
 import com.wallpaper.WallpaperApplyTask.Apply.HOMESCREEN_LOCKSCREEN

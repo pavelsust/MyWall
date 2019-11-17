@@ -1,4 +1,4 @@
-package com.danimahardhika.android.helpers.core;
+package com.danimahardhika.android.helpers.a;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -124,7 +124,7 @@ public class WallViewHelper {
         if (view == null) return;
 
         Context context = WallContextHelper.getBaseContext(view);
-        Drawable drawable = DrawableHelper.get(context, resId);
+        Drawable drawable = WallDrawableHelper.get(context, resId);
         setSearchViewSearchIcon(view, drawable);
     }
 
@@ -156,7 +156,7 @@ public class WallViewHelper {
         if (view == null) return;
 
         Context context = WallContextHelper.getBaseContext(view);
-        Drawable drawable = DrawableHelper.get(context, resId);
+        Drawable drawable = WallDrawableHelper.get(context, resId);
         setSearchViewCloseIcon(view, drawable);
     }
 
