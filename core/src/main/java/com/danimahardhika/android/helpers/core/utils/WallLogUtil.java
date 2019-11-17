@@ -23,26 +23,26 @@ import androidx.annotation.NonNull;
  * limitations under the License.
  */
 
-public class LogUtil {
+public class WallLogUtil {
 
     private static boolean mIsLoggingEnabled = false;
     private static String mLoggingTag = "AndroidHelpers";
 
     public static void setLoggingEnabled(boolean enabled) {
-        LogUtil.mIsLoggingEnabled = enabled;
+        WallLogUtil.mIsLoggingEnabled = enabled;
     }
 
     public static void setLoggingTag(@NonNull String tag) {
-        LogUtil.mLoggingTag = tag;
+        WallLogUtil.mLoggingTag = tag;
     }
 
     public static void d(String message) {
-        if (LogUtil.mIsLoggingEnabled)
-            Log.d(LogUtil.mLoggingTag, ""+ message);
+        if (WallLogUtil.mIsLoggingEnabled)
+            Log.d(WallLogUtil.mLoggingTag, ""+ message);
     }
 
     public static void e(String message) {
-        if (LogUtil.mIsLoggingEnabled)
-            Log.e(LogUtil.mLoggingTag, ""+ message);
+        if (WallLogUtil.mIsLoggingEnabled)
+            Log.e(WallLogUtil.mLoggingTag, ""+ message);
     }
 }

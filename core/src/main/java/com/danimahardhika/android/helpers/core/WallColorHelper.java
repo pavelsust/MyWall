@@ -36,7 +36,7 @@ import androidx.core.content.ContextCompat;
  * limitations under the License.
  */
 
-public class ColorHelper {
+public class WallColorHelper {
 
     /**
      * @param color can be ColorInt or ColorRes
@@ -71,7 +71,7 @@ public class ColorHelper {
     @ColorInt
     public static int getAttributeColor(Context context, @AttrRes int attr) {
         if (context == null) {
-            Log.e("ColorHelper", "getAttributeColor() context is null");
+            Log.e("WallColorHelper", "getAttributeColor() context is null");
             return Color.WHITE;
         }
 
@@ -117,8 +117,8 @@ public class ColorHelper {
                 new int[] {}
         };
         int[] colors = new int[] {
-                ColorHelper.getDarkerColor(color, 0.8f),
-                ColorHelper.getDarkerColor(color, 0.8f),
+                WallColorHelper.getDarkerColor(color, 0.8f),
+                WallColorHelper.getDarkerColor(color, 0.8f),
                 color
         };
         return new ColorStateList(states, colors);
@@ -138,13 +138,13 @@ public class ColorHelper {
     }
 
     public static boolean isLightColor(@ColorInt int color) {
-        int title = ColorHelper.getTitleTextColor(color);
+        int title = WallColorHelper.getTitleTextColor(color);
         return title != Color.WHITE;
     }
 
     public static void setupStatusBarIconColor(Context context) {
         if (context == null) {
-            Log.e("ColorHelper", "setupStatusBarIconColor() context is null");
+            Log.e("WallColorHelper", "setupStatusBarIconColor() context is null");
             return;
         }
         int color = getAttributeColor(context, R.attr.colorPrimaryDark);
@@ -153,12 +153,12 @@ public class ColorHelper {
 
     public static void setupStatusBarIconColor(Context context, boolean isLightToolbar) {
         if (context == null) {
-            Log.e("ColorHelper", "setupStatusBarIconColor() context is null");
+            Log.e("WallColorHelper", "setupStatusBarIconColor() context is null");
             return;
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (((AppCompatActivity) context).getWindow() == null) {
-                Log.e("ColorHelper", "setupStatusBarIconColor() getWindow() returns null");
+                Log.e("WallColorHelper", "setupStatusBarIconColor() getWindow() returns null");
                 return;
             }
 

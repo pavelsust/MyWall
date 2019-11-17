@@ -6,7 +6,7 @@ import android.content.Context
 import android.graphics.*
 import android.os.Build
 import android.util.Log
-import com.danimahardhika.android.helpers.core.WindowHelper
+import com.danimahardhika.android.helpers.core.WallWindowHelper
 import com.nostra13.universalimageloader.core.ImageLoader
 import com.nostra13.universalimageloader.core.assist.ImageSize
 import com.wallpaper.WallpaperApplyTask.Apply.HOMESCREEN_LOCKSCREEN
@@ -119,8 +119,8 @@ object WallpaperApplyTask : WallpaperPropertiesLoaderTask.CallbackWallpaper,
             var imageSize = WallpaperHelper.getTargetSize(context?.get()!!)
 
             if (rectF != null && Build.VERSION.SDK_INT == Build.VERSION_CODES.KITKAT) {
-                var point: Point = WindowHelper.getScreenSize(context?.get()!!)
-                val height = point.y - WindowHelper.getStatusBarHeight(context?.get()!!) - WindowHelper.getNavigationBarHeight(
+                var point: Point = WallWindowHelper.getScreenSize(context?.get()!!)
+                val height = point.y - WallWindowHelper.getStatusBarHeight(context?.get()!!) - WallWindowHelper.getNavigationBarHeight(
                         context?.get()!!)
                 val heightFactor = imageSize.height.toFloat() / height.toFloat()
                 rectF = WallpaperHelper.getScaledRestF(rectF, heightFactor, 1f)

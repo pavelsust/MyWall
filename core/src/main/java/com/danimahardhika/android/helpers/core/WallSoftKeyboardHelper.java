@@ -28,7 +28,7 @@ import androidx.annotation.NonNull;
  * limitations under the License.
  */
 
-public class SoftKeyboardHelper {
+public class WallSoftKeyboardHelper {
 
     private final View decorView;
     private final View contentView;
@@ -55,7 +55,7 @@ public class SoftKeyboardHelper {
      * This code was taken from https://github.com/mikepenz/MaterialDrawer/issues/95#issuecomment-80519589
      */
 
-    public SoftKeyboardHelper(Activity activity, View contentView) {
+    public WallSoftKeyboardHelper(Activity activity, View contentView) {
         this.decorView = activity.getWindow().getDecorView();
         this.contentView = contentView;
 

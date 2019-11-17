@@ -1,10 +1,9 @@
 package com.danimahardhika.android.helpers.core;
 
 import android.content.Context;
-import android.view.View;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.view.ContextThemeWrapper;
+
 
 /*
  * Android Helpers
@@ -24,14 +23,13 @@ import androidx.appcompat.view.ContextThemeWrapper;
  * limitations under the License.
  */
 
-public class ContextHelper {
+public class WallUnitHelper {
 
-    @NonNull
-    public static Context getBaseContext(@NonNull View view) {
-        Context context = view.getContext();
-        if (context instanceof ContextThemeWrapper) {
-            context = ((ContextThemeWrapper) view.getContext()).getBaseContext();
-        }
-        return context;
+    public static float toPixel(@NonNull Context context, float dp){
+        return dp * context.getResources().getDisplayMetrics().density;
+    }
+
+    public static float toDp(@NonNull Context context, float px){
+        return px / context.getResources().getDisplayMetrics().density;
     }
 }

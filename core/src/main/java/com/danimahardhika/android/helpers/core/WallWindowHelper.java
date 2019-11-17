@@ -38,7 +38,7 @@ import androidx.appcompat.app.AppCompatActivity;
  * limitations under the License.
  */
 
-public class WindowHelper {
+public class WallWindowHelper {
 
     public enum NavigationBarTranslucent {
         PORTRAIT_LANDSCAPE,
@@ -59,7 +59,7 @@ public class WindowHelper {
                     } else {
                         ((AppCompatActivity) context).getWindow().clearFlags(
                                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-                        ColorHelper.setNavigationBarColor(context, Color.BLACK);
+                        WallColorHelper.setNavigationBarColor(context, Color.BLACK);
                     }
                     break;
                 case LANDSCAPE_ONLY:
@@ -69,7 +69,7 @@ public class WindowHelper {
                     } else {
                         ((AppCompatActivity) context).getWindow().clearFlags(
                                 WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-                        ColorHelper.setNavigationBarColor(context, Color.BLACK);
+                        WallColorHelper.setNavigationBarColor(context, Color.BLACK);
                     }
                     break;
                 case PORTRAIT_LANDSCAPE:
@@ -94,12 +94,12 @@ public class WindowHelper {
 
     public static void setTranslucentStatusBar(Context context, boolean translucent) {
         if (context == null) {
-            Log.e("WindowHelper", "context is null");
+            Log.e("WallWindowHelper", "context is null");
             return;
         }
 
         if (!(context instanceof Activity)) {
-            Log.e("WindowHelper", "context must be instance of activity");
+            Log.e("WallWindowHelper", "context must be instance of activity");
             return;
         }
 
@@ -169,13 +169,13 @@ public class WindowHelper {
 
     public static void setupApplicationWindowColor(@NonNull Context context, String appName, @Nullable Drawable drawable, @ColorInt int color) {
         Bitmap bitmap = null;
-        if (drawable != null) bitmap = BitmapHelper.toBitmap(drawable);
+        if (drawable != null) bitmap = WallBitmapHelper.toBitmap(drawable);
         setupApplicationWindowColor(context, appName, bitmap, color);
     }
 
     public static void setupApplicationWindowColor(@NonNull Context context, String appName, @DrawableRes int resId, @ColorInt int color) {
         Drawable drawable = DrawableHelper.get(context, resId);
-        Bitmap bitmap = BitmapHelper.toBitmap(drawable);
+        Bitmap bitmap = WallBitmapHelper.toBitmap(drawable);
         setupApplicationWindowColor(context, appName, bitmap, color);
     }
 

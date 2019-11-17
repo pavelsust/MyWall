@@ -43,13 +43,13 @@ import com.google.android.material.navigation.NavigationView;
  * limitations under the License.
  */
 
-public class ViewHelper {
+public class WallViewHelper {
 
     /** Setup toolbar for activity that have both translucent status and navigation bar */
     public static void setupToolbar(@NonNull Toolbar toolbar) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            Context context = ContextHelper.getBaseContext(toolbar);
-            int statusBarSize = WindowHelper.getStatusBarHeight(context);
+            Context context = WallContextHelper.getBaseContext(toolbar);
+            int statusBarSize = WallWindowHelper.getStatusBarHeight(context);
 
             if (toolbar.getLayoutParams() instanceof AppBarLayout.LayoutParams) {
                 AppBarLayout.LayoutParams params = (AppBarLayout.LayoutParams) toolbar.getLayoutParams();
@@ -97,7 +97,7 @@ public class ViewHelper {
 
     public static void setSearchViewTextColor(@Nullable View view, @ColorInt int textColor) {
         if (view != null) {
-            int hintColor = ColorHelper.setColorAlpha(textColor, 0.5f);
+            int hintColor = WallColorHelper.setColorAlpha(textColor, 0.5f);
             if (view instanceof TextView) {
                 ((TextView) view).setTextColor(textColor);
                 ((TextView) view).setHintTextColor(hintColor);
@@ -114,8 +114,8 @@ public class ViewHelper {
         if (view != null) {
             View background = view.findViewById(R.id.search_plate);
             if (background != null) {
-                Context context = ContextHelper.getBaseContext(view);
-                background.setBackgroundColor(ColorHelper.get(context, color));
+                Context context = WallContextHelper.getBaseContext(view);
+                background.setBackgroundColor(WallColorHelper.get(context, color));
             }
         }
     }
@@ -123,7 +123,7 @@ public class ViewHelper {
     public static void setSearchViewSearchIcon(@Nullable View view, @DrawableRes int resId) {
         if (view == null) return;
 
-        Context context = ContextHelper.getBaseContext(view);
+        Context context = WallContextHelper.getBaseContext(view);
         Drawable drawable = DrawableHelper.get(context, resId);
         setSearchViewSearchIcon(view, drawable);
     }
@@ -155,7 +155,7 @@ public class ViewHelper {
     public static void setSearchViewCloseIcon(@Nullable View view, @DrawableRes int resId) {
         if (view == null) return;
 
-        Context context = ContextHelper.getBaseContext(view);
+        Context context = WallContextHelper.getBaseContext(view);
         Drawable drawable = DrawableHelper.get(context, resId);
         setSearchViewCloseIcon(view, drawable);
     }

@@ -1,7 +1,10 @@
 package com.danimahardhika.android.helpers.core;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import android.content.Context;
+import android.view.View;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.view.ContextThemeWrapper;
 
 /*
  * Android Helpers
@@ -21,24 +24,14 @@ import java.util.Collection;
  * limitations under the License.
  */
 
-public class ListHelper {
+public class WallContextHelper {
 
-    public static <T> Collection<T> intersect(Collection <? extends T> a, Collection <? extends T> b) {
-        Collection <T> result = new ArrayList<>();
-
-        for (T t : a) {
-            if (b.remove(t)) result.add(t);
+    @NonNull
+    public static Context getBaseContext(@NonNull View view) {
+        Context context = view.getContext();
+        if (context instanceof ContextThemeWrapper) {
+            context = ((ContextThemeWrapper) view.getContext()).getBaseContext();
         }
-        return result;
-    }
-
-    public static <T> Collection<T> difference(Collection <? extends T> a, Collection <? extends T> b) {
-        Collection <T> result = new ArrayList<>();
-        result.addAll(b);
-
-        for (T t : a) {
-            result.remove(t);
-        }
-        return result;
+        return context;
     }
 }

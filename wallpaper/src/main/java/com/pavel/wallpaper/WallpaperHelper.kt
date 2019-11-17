@@ -6,7 +6,7 @@ import android.graphics.Point
 import android.graphics.RectF
 import android.os.Build
 import androidx.annotation.Nullable
-import com.danimahardhika.android.helpers.core.WindowHelper
+import com.danimahardhika.android.helpers.core.WallWindowHelper
 import com.nostra13.universalimageloader.core.assist.ImageSize
 import java.io.File
 
@@ -30,7 +30,7 @@ object WallpaperHelper {
      *
      */
     fun getTargetSize(context: Context): ImageSize{
-        var point: Point = WindowHelper.getScreenSize(context)
+        var point: Point = WallWindowHelper.getScreenSize(context)
         var targetHeight: Int = point.y
         var targetWidth : Int = point.x
 
@@ -40,8 +40,8 @@ object WallpaperHelper {
         }
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
-            val statusBarHeight = WindowHelper.getStatusBarHeight(context)
-            val navBarHeight = WindowHelper.getNavigationBarHeight(context)
+            val statusBarHeight = WallWindowHelper.getStatusBarHeight(context)
+            val navBarHeight = WallWindowHelper.getNavigationBarHeight(context)
             targetHeight += statusBarHeight + navBarHeight
         }
 

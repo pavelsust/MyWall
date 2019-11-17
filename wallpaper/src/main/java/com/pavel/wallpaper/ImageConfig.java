@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 
 import androidx.annotation.NonNull;
 
-import com.danimahardhika.android.helpers.core.FileHelper;
+import com.danimahardhika.android.helpers.core.WallFileHelper;
 import com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiskCache;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -27,10 +27,10 @@ public class ImageConfig {
                 .threadPriority(Thread.NORM_PRIORITY - 2)
                 .threadPoolSize(4)
                 .tasksProcessingOrder(QueueProcessingType.FIFO)
-                .diskCacheSize(256 * FileHelper.MB)
+                .diskCacheSize(256 * WallFileHelper.MB)
                 .diskCache(new UnlimitedDiskCache(new File(
                         context.getCacheDir().toString() + "/uil-images")))
-                .memoryCacheSize(8 * FileHelper.MB)
+                .memoryCacheSize(8 * WallFileHelper.MB)
                 .build();
     }
 

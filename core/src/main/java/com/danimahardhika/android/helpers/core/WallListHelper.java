@@ -1,9 +1,7 @@
 package com.danimahardhika.android.helpers.core;
 
-import android.content.Context;
-
-import androidx.annotation.NonNull;
-
+import java.util.ArrayList;
+import java.util.Collection;
 
 /*
  * Android Helpers
@@ -23,13 +21,24 @@ import androidx.annotation.NonNull;
  * limitations under the License.
  */
 
-public class UnitHelper {
+public class WallListHelper {
 
-    public static float toPixel(@NonNull Context context, float dp){
-        return dp * context.getResources().getDisplayMetrics().density;
+    public static <T> Collection<T> intersect(Collection <? extends T> a, Collection <? extends T> b) {
+        Collection <T> result = new ArrayList<>();
+
+        for (T t : a) {
+            if (b.remove(t)) result.add(t);
+        }
+        return result;
     }
 
-    public static float toDp(@NonNull Context context, float px){
-        return px / context.getResources().getDisplayMetrics().density;
+    public static <T> Collection<T> difference(Collection <? extends T> a, Collection <? extends T> b) {
+        Collection <T> result = new ArrayList<>();
+        result.addAll(b);
+
+        for (T t : a) {
+            result.remove(t);
+        }
+        return result;
     }
 }

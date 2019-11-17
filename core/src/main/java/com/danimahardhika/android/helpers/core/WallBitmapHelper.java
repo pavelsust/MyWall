@@ -35,7 +35,7 @@ import java.io.ByteArrayOutputStream;
  * limitations under the License.
  */
 
-public class BitmapHelper {
+public class WallBitmapHelper {
 
     @Nullable
     public static Bitmap getTintedBitmap(@NonNull Context context, @DrawableRes int resId, @ColorInt int color) {

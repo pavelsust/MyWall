@@ -71,7 +71,7 @@ public class DrawableHelper {
     @Nullable
     public static Drawable getResizedDrawable(@NonNull Context context, @NonNull Drawable drawable, float sizeInDp) {
         try {
-            int size = Math.round(UnitHelper.toPixel(context, sizeInDp));
+            int size = Math.round(WallUnitHelper.toPixel(context, sizeInDp));
 
             Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
                     drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);

@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
  * limitations under the License.
  */
 
-public class TimeHelper {
+public class WallTimeHelper {
 
     public static final String FORMAT_MINUTE_SECOND = "%02d:%02d";
 
@@ -80,7 +80,7 @@ public class TimeHelper {
         try {
             return simpleDateFormat.parse(datetime);
         } catch(Exception e){
-            Log.e("TimeHelper", Log.getStackTraceString(e));
+            Log.e("WallTimeHelper", Log.getStackTraceString(e));
             return null;
         }
     }

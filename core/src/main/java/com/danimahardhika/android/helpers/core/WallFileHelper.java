@@ -38,7 +38,7 @@ import java.util.zip.ZipOutputStream;
  * limitations under the License.
  */
 
-public class FileHelper {
+public class WallFileHelper {
 
     public static final int MB = (1024 * 1014);
     public static final int KB = 1024;
