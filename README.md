@@ -5,5 +5,7 @@
     Set Crop Wallpaper
 
 
+<p align="center">
+   src="https://miro.medium.com/max/320/1*xXxVz42BvTObOb1Ux7oixg.gif"
+</p>
 
-Full document here: https://medium.com/@mdmasudparvez/mywall-best-wallpaper-library-for-android-9d2926cc5840
