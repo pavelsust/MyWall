@@ -5,5 +5,4 @@
     Set Crop Wallpaper
 
 
-![](1.gif)
-![](2.gif)
+![](2.gif) ![](1.gif)
