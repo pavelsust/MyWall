@@ -45,4 +45,36 @@ dependencies {
 ```		
 
 <p> Just change the Apply option for your requirnemn</p>. Also we have some callback option. 
+
+```java
+
 WallpaperApplyTask.OnMessageCallBack
+
+```
+
+<p> With CallBack full code be will like</p>
+
+```java
+
+class MainActivity : AppCompatActivity() , WallpaperApplyTask.OnMessageCallBack{
+ 
+ override fun onCreate(savedInstanceState: Bundle?) {
+     super.onCreate(savedInstanceState)
+    
+    
+    WallpaperApplyTask.prepare(this)
+        .wallpaperLink("https://wallpaperplay.com/walls/full/0/2/e/105979.jpg")
+        .showProgressMessage(this)
+        .to(WallpaperApplyTask.Apply.HOMESCREEN_LOCKSCREEN())
+        .start()
+
+}
+
+  override fun carryWallpaperMessage(message: String) {
+
+    runOnUiThread{
+        Toast.makeText(applicationContext , ""+message , Toast.LENGTH_SHORT ).show()
+    }
+}
+
+```
