@@ -32,3 +32,17 @@ dependencies {
            .to(WallpaperApplyTask.Apply.HOMESCREEN())
            .start()
 ```
+<p> Also you have three more category</p>
+
+```java
+
+   .to(WallpaperApplyTask.Apply.HOMESCREEN())   // scrollable wallpaper 
+   or
+   .to(WallpaperApplyTask.Apply.HOME_CROP_WALLPAPER())  // this is for crop wallpaper
+   or
+    .to(WallpaperApplyTask.Apply.HOMESCREEN_LOCKSCREEN())  // for wallpaper and lock screen both
+		
+```		
+
+<p> Just change the Apply option for your requirnemn</p>. Also we have some callback option. 
+WallpaperApplyTask.OnMessageCallBack
