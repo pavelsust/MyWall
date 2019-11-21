@@ -4,5 +4,31 @@
     Set Lock Wallpaper
     Set Crop Wallpaper
 
-
 ![](2.gif) ![](1.gif)
+
+###Insall
+
+Add this dependency in your `build.gradle`: 
+
+```groovy
+allprojects {
+	repositories {
+		maven { url 'https://jitpack.io' }
+		}
+	}
+```
+```xml
+dependencies {
+      implementation 'com.github.paveltech.MyWall:wallpaper:1.0.7'
+}
+```
+### Implementation
+
+<p> You don't need any permission for this library.It will automatically handel this. This library written by kotlin. Just pass a image link. </P>
+    
+ ```java
+ WallpaperApplyTask.prepare(this)
+           .wallpaperLink("https://wallpaperplay.com/walls/full/0/2/e/105979.jpg")
+           .to(WallpaperApplyTask.Apply.HOMESCREEN())
+           .start()
+```
