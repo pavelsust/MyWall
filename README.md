@@ -5,7 +5,4 @@
     Set Crop Wallpaper
 
 
-<p align="center">
-   src="https://miro.medium.com/max/320/1*xXxVz42BvTObOb1Ux7oixg.gif"
-</p>
-
+<img src="https://miro.medium.com/max/320/1*xXxVz42BvTObOb1Ux7oixg.gif" width="40" height="40" />
