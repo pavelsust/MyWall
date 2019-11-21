@@ -5,4 +5,4 @@
     Set Crop Wallpaper
 
 
-<img src="https://miro.medium.com/max/320/1*xXxVz42BvTObOb1Ux7oixg.gif"/>
+![](1.gif)  ![](2.gif)
